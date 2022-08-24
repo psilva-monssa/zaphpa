@@ -150,7 +150,7 @@ class Response {
                 header($header);
             }
             if ($noContentType == false) {
-                header("Content-Type: $this->format;", true, $this->code);
+                header("Content-Type: $this->format", true, $this->code);
             }
         }
     }
